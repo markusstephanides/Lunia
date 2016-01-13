@@ -1,0 +1,10 @@
+﻿
+1. Player connects to the server
+2. Player sends a salt to the server to verify validity
+3. Player sends username and hashed password to server
+4. Server confirms authentication
+5. Server sends state switch (character selection) with characters as information
+6. Player sees character selection
+7. Player sends chosen character GUID to server
+
+tbc..
