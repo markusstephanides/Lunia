@@ -23,7 +23,7 @@ namespace LuniaAssembly
             BinaryWriter binaryWriter = new BinaryWriter(memoryStream);
 
             //Write id
-            binaryWriter.Write(packet.ID);
+            binaryWriter.Write(Protocol.GetIDByType(packet.GetType()));
 
             //Write packet
             packet.Write(binaryWriter);

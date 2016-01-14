@@ -5,7 +5,6 @@ namespace LuniaAssembly.Packet
 {
     public interface IPacket
     {
-        short ID { get; }
 
         void Read(BinaryReader stream);
         void Write(BinaryWriter stream);

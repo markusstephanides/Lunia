@@ -64,7 +64,8 @@ namespace Lunia.UI
                 Vector2 pos = new Vector2(buttonX, Position.Y + Size.Y - button.Size.Y);
                 button.Position = pos;
 
-                button.Draw(spriteBatch);
+                //TODO ReEnable
+               // button.Draw(spriteBatch);
             }
         }
 

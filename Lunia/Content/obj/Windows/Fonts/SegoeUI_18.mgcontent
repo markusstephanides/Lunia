@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/Fonts/SegoeUI_18.spritefont</SourceFile>
-  <SourceTime>2016-01-03T23:08:15.3632971+01:00</SourceTime>
-  <DestFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/bin/Windows/Fonts/SegoeUI_18.xnb</DestFile>
-  <DestTime>2016-01-10T20:32:11.5748197+01:00</DestTime>
+  <SourceFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/Fonts/SegoeUI_18.spritefont</SourceFile>
+  <SourceTime>2016-01-14T09:44:15.5616994+01:00</SourceTime>
+  <DestFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/bin/Windows/Fonts/SegoeUI_18.xnb</DestFile>
+  <DestTime>2016-01-14T09:45:32.1399777+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

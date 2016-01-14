@@ -159,7 +159,7 @@ namespace Lunia.Networking
                     if (packetID == -1 && PacketReceived != null) return;
 
                     //Convert to packet
-                    IPacket packet = (IPacket) Activator.CreateInstance(Protocol.GetByID(packetID));
+                    IPacket packet = (IPacket) Activator.CreateInstance(Protocol.GetTypeByID(packetID));
                     packet.Read(reader);
 
                     PacketReceived?.Invoke(this, new PacketReceivedArgs() {Packet = packet});
@@ -181,7 +181,8 @@ namespace Lunia.Networking
             BinaryWriter binaryWriter = new BinaryWriter(memoryStream);
 
             //Write id
-            binaryWriter.Write(packet.ID);
+            short id = Protocol.GetIDByType(packet.GetType());
+            binaryWriter.Write(id);
 
             //Write packet
             packet.Write(binaryWriter);

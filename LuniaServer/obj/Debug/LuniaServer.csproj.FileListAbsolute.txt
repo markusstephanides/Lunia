@@ -8,3 +8,13 @@ c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaServer\obj\Debu
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaServer\obj\Debug\LuniaServer.pdb
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaServer\obj\Debug\LuniaServer.ServerGUI.resources
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaServer\obj\Debug\LuniaServer.csproj.GenerateResource.Cache
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\bin\Debug\LuniaServer.exe.config
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\obj\Debug\LuniaServer.exe
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\obj\Debug\LuniaServer.pdb
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\bin\Debug\LuniaServer.exe
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\bin\Debug\LuniaServer.pdb
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\bin\Debug\LuniaAssembly.dll
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\bin\Debug\LuniaAssembly.pdb
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\obj\Debug\LuniaServer.csprojResolveAssemblyReference.cache
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\obj\Debug\LuniaServer.ServerGUI.resources
+C:\Users\Markus\Source\Repos\Lunia\LuniaServer\obj\Debug\LuniaServer.csproj.GenerateResource.Cache

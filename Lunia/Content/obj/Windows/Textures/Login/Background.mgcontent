@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/Textures/Login/Background.png</SourceFile>
-  <SourceTime>2016-01-03T17:27:32.5286492+01:00</SourceTime>
-  <DestFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/bin/Windows/Textures/Login/Background.xnb</DestFile>
-  <DestTime>2016-01-10T20:32:11.3350804+01:00</DestTime>
+  <SourceFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/Textures/Login/Background.png</SourceFile>
+  <SourceTime>2016-01-14T09:44:15.6447745+01:00</SourceTime>
+  <DestFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/bin/Windows/Textures/Login/Background.xnb</DestFile>
+  <DestTime>2016-01-14T09:45:31.5234207+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

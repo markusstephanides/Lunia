@@ -5,8 +5,6 @@ namespace LuniaAssembly.Packet
 {
     public class LCAuthenticationResponse : IPacket
     {
-        public short ID => 2;
-
         public AuthenticationResult Result { get; set; }
 
 

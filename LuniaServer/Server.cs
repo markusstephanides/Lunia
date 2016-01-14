@@ -14,13 +14,15 @@ namespace LuniaServer
         private HashSet<IPlayer> players;
         private SimpleServer simpleServer;
 
-        private readonly AuthenticationService authenticationService;
+        public AuthenticationService AuthenticationService { get; }
+        public CharacterService CharacterService { get; }
 
         public Server(StartupSettings settings)
         {
             bootstrap(settings);
 
-            authenticationService = new AuthenticationService();
+            AuthenticationService = new AuthenticationService(this);
+            CharacterService = new CharacterService();
         }
 
         private void bootstrap(StartupSettings settings)
@@ -45,7 +47,7 @@ namespace LuniaServer
         private void handleAuthentication(Connection connection, IPacket packet)
         {
             LCAuthentication authentication = (LCAuthentication) packet;
-            authenticationService.ProcessAuthentication(connection, authentication);
+            AuthenticationService.ProcessAuthentication(connection, authentication);
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Dynamic;
 using System.Linq;
 using Lunia.Networking;
 using Lunia.Scenes;
+using LuniaAssembly.Packet;
+using LuniaAssembly.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -17,7 +19,7 @@ namespace Lunia
     {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
-        private List<IScene> IScenes;
+        private List<IScene> Scenes;
 
         public TCPClient NetworkClient { get; set; }
 
@@ -26,9 +28,9 @@ namespace Lunia
         #region Statics
         public static GameWindow Instance;
 
-        public static void SwitchIScene(Type type)
+        public static void SwitchScene(Type type)
         {
-            IScene IScene = Instance.IScenes.FirstOrDefault(x => x.GetType() == type);
+            IScene IScene = Instance.Scenes.FirstOrDefault(x => x.GetType() == type);
 
             if (IScene == null) return;
 
@@ -46,18 +48,39 @@ namespace Lunia
             graphics = new GraphicsDeviceManager(this);
 
             Content.RootDirectory = "Content";
-            IScenes = new List<IScene>();
+            Scenes = new List<IScene>();
         }
 
         protected override void Initialize()
         {
             IsMouseVisible = true;
-            NetworkClient = new TCPClient("192.168.244.1", 12340);
-            
+            NetworkClient = new TCPClient("192.168.0.109", 12340);
+            TCPClient.PacketReceived += TCPClient_PacketReceived;
 
             base.Initialize();
         }
 
+        private void TCPClient_PacketReceived(object sender, PacketReceivedArgs e)
+        {
+            IPacket packet = e.Packet;
+
+            if (packet is LCStateSwitch)
+            {
+                LCStateSwitch state = (LCStateSwitch)packet;
+
+                switch (state.GameState)
+                {
+                    case GameState.LOGIN:
+                        SwitchScene(typeof(LoginScene));
+                        break;
+                    case GameState.CHARACTER_SELECTION:
+                        SwitchScene(typeof(CharacterSelectionScene));
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
 
         protected override void LoadContent()
         {
@@ -71,24 +94,25 @@ namespace Lunia
             graphics.PreferredBackBufferHeight = 720;
             graphics.ApplyChanges();
 
-            //Register IScenes
-            IScenes.Add(new LoginScene());
+            //Register Scenes
+            Scenes.Add(new LoginScene());
+            Scenes.Add(new CharacterSelectionScene());
 
             //Set first IScene
-            SwitchIScene(typeof(LoginScene));
+            SwitchScene(typeof (LoginScene));
         }
 
 
         protected override void UnloadContent()
         {
-            //Unload content of the IScenes
-            IScenes.ForEach(x => x.UnloadContent());
+            //Unload content of the Scenes
+            Scenes.ForEach(x => x.UnloadContent());
         }
 
 
         protected override void Update(GameTime gameTime)
         {
-            //Update all IScenes
+            //Update all Scenes
             activeIScene?.Update(gameTime, Mouse.GetState(), Keyboard.GetState());
 
             base.Update(gameTime);

@@ -45,7 +45,7 @@ namespace LuniaServer
                 if (packetID == -1 || !handlers.ContainsKey(packetID)) return;
 
                 //Convert to packet
-                IPacket packet = (IPacket)Activator.CreateInstance(Protocol.GetByID(packetID));
+                IPacket packet = (IPacket)Activator.CreateInstance(Protocol.GetTypeByID(packetID));
                 packet.Read(reader);
 
                 //Get Connection

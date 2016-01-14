@@ -76,7 +76,7 @@ namespace Lunia.UI
                     if (caretPosition > 0)
                     {
                         RealText = RealText.Remove(caretPosition - 1, 1);
-                        updateVisualText();
+                        UpdateVisualText();
                         caretPosition--;
                     }
                 }
@@ -88,7 +88,7 @@ namespace Lunia.UI
             }
         }
 
-        private void updateVisualText()
+        public void UpdateVisualText()
         {
             if (PasswordBox)
             {
@@ -129,7 +129,7 @@ namespace Lunia.UI
                                 (Rectangle.X + Rectangle.Width)))
             {
                 RealText = RealText.Insert(caretPosition, charToInsert.ToString());
-                updateVisualText();
+                UpdateVisualText();
                 caretPosition++;
             }
         }
@@ -172,7 +172,7 @@ namespace Lunia.UI
                         if (pressedKey == Keys.Delete && Text.Length > 0 && caretPosition < Text.Length)
                         {
                             RealText = RealText.Remove(caretPosition, 1);
-                            updateVisualText();
+                            UpdateVisualText();
                         }
                         else if (pressedKey == Keys.Enter)
                         {

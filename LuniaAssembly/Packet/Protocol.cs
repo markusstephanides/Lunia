@@ -6,6 +6,8 @@ namespace LuniaAssembly.Packet
     {
         public static readonly Protocol Authentication = new Protocol(1, typeof(LCAuthentication));
         public static readonly Protocol AuthenticationResponse = new Protocol(2, typeof(LCAuthenticationResponse));
+        public static readonly Protocol StateSwitch = new Protocol(3, typeof(LCStateSwitch));
+        public static readonly Protocol CharacterList = new Protocol(4, typeof(LCCharacterList));
 
         public short PacketID { get; set; }
         public Type Type { get; set; }
@@ -17,7 +19,7 @@ namespace LuniaAssembly.Packet
         }
 
         //TODO Optimize (Caching)
-        public static Type GetByID(short id)
+        public static Type GetTypeByID(short id)
         {
             foreach (var field in typeof(Protocol).GetFields())
             {
@@ -32,7 +34,7 @@ namespace LuniaAssembly.Packet
             return null;
         }
 
-        public static int GetByType(Type type)
+        public static short GetIDByType(Type type)
         {
             foreach (var field in typeof(Protocol).GetFields())
             {

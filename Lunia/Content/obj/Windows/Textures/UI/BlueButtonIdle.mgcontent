@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/Textures/UI/BlueButtonIdle.png</SourceFile>
-  <SourceTime>2016-01-06T15:31:39.9590493+01:00</SourceTime>
-  <DestFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/bin/Windows/Textures/UI/BlueButtonIdle.xnb</DestFile>
-  <DestTime>2016-01-10T20:32:11.7564529+01:00</DestTime>
+  <SourceFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/Textures/UI/BlueButtonIdle.png</SourceFile>
+  <SourceTime>2016-01-14T09:44:15.6517796+01:00</SourceTime>
+  <DestFile>C:/Users/Markus/Source/Repos/Lunia/Lunia/Content/bin/Windows/Textures/UI/BlueButtonIdle.xnb</DestFile>
+  <DestTime>2016-01-14T09:45:32.4832908+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

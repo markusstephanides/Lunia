@@ -42,7 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Networking\Connection.cs" />
+    <Compile Include="Packet\LCCharacterList.cs" />
+    <Compile Include="Packet\LCStateSwitch.cs" />
+    <Compile Include="States\GameState.cs" />
     <Compile Include="Util\Constants.cs" />
+    <Compile Include="Util\Serialization.cs" />
+    <Compile Include="World\Character.cs" />
     <Compile Include="World\IEntity.cs" />
     <Compile Include="World\IPlayer.cs" />
     <Compile Include="World\IWorld.cs" />

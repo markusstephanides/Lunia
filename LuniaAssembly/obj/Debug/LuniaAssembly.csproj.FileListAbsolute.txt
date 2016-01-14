@@ -3,3 +3,8 @@ c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaAssembly\bin\De
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.csprojResolveAssemblyReference.cache
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.dll
 c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.pdb
+C:\Users\Markus\Source\Repos\Lunia\LuniaAssembly\bin\Debug\LuniaAssembly.dll
+C:\Users\Markus\Source\Repos\Lunia\LuniaAssembly\bin\Debug\LuniaAssembly.pdb
+C:\Users\Markus\Source\Repos\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.csprojResolveAssemblyReference.cache
+C:\Users\Markus\Source\Repos\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.dll
+C:\Users\Markus\Source\Repos\Lunia\LuniaAssembly\obj\Debug\LuniaAssembly.pdb

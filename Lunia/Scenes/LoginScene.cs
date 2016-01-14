@@ -60,13 +60,16 @@ namespace Lunia.Scenes
             background = contentManager.Load<Texture2D>("Textures/Login/Background");
 
             //Load controls
-            usernameTextBox = new TextBox(contentManager.Load<Texture2D>("Textures/UI/TextBox"),arial15 , "", new Rectangle(
+            usernameTextBox = new TextBox(contentManager.Load<Texture2D>("Textures/UI/TextBox"),arial15 , "digot", new Rectangle(
                 (int)((GameWindow.Instance.GraphicsDevice.Viewport.Width - 180) * 0.5), (int)(GameWindow.Instance.GraphicsDevice.Viewport.Height * 0.5) - 15, 180, 34)
                 );
 
             passwordTextBox = new TextBox(contentManager.Load<Texture2D>("Textures/UI/TextBox"), arial15, "", new Rectangle(
                 (int)((GameWindow.Instance.GraphicsDevice.Viewport.Width - 180) * 0.5), (int)(GameWindow.Instance.GraphicsDevice.Viewport.Height * 0.5) + 55, 180, 34)
                 );
+
+            passwordTextBox.RealText = "test";
+            passwordTextBox.UpdateVisualText();
 
             loginStatusBox = new MessageBox(contentManager.Load<Texture2D>("Textures/UI/MessageBox"), new Vector2((
                 GameWindow.Instance.GraphicsDevice.Viewport.Width - 320) * 0.5f, (GameWindow.Instance.GraphicsDevice.Viewport.Height - 80) * 0.5f), new Vector2(320, 80), "Hallo", segoeUI18);
