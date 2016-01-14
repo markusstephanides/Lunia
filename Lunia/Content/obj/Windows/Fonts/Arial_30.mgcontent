@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/Fonts/Arial_30.spritefont</SourceFile>
+  <SourceTime>2016-01-03T15:43:21.6288996+01:00</SourceTime>
+  <DestFile>C:/Users/Markus/documents/visual studio 2015/Projects/Lunia/Lunia/Content/bin/Windows/Fonts/Arial_30.xnb</DestFile>
+  <DestTime>2016-01-10T20:32:11.0848128+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2015-04-29T19:14:44+02:00</ProcessorTime>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

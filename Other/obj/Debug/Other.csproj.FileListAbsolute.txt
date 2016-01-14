@@ -1,0 +1,8 @@
+c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\bin\Debug\Other.exe.config
+c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\bin\Debug\Other.exe
+c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\bin\Debug\Other.pdb
+c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\obj\Debug\Other.exe
+c:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\obj\Debug\Other.pdb
+C:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\bin\Debug\LuniaAssembly.dll
+C:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\bin\Debug\LuniaAssembly.pdb
+C:\Users\Markus\documents\visual studio 2015\Projects\Lunia\Other\obj\Debug\Other.csprojResolveAssemblyReference.cache
